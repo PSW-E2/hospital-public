@@ -32,14 +32,14 @@ export class RegisterComponent implements OnInit{
   allergensList: any = [];
   selectedAllergens = [];
   bloodTypes: BloodType[] = [
-    {value: 'AB+-0', viewValue: 'AB+'},
-    {value: 'AB--1', viewValue: 'AB-'},
-    {value: 'A+-2', viewValue: 'A+'},
-    {value: 'A--3', viewValue: 'A-'},
-    {value: 'B+-4', viewValue: 'B+'},
-    {value: 'B--5', viewValue: 'B-'},
-    {value: 'O+-6', viewValue: 'O+'},
-    {value: 'O--7', viewValue: 'O-'},
+    {value: 'AB+', viewValue: 'AB+'},
+    {value: 'AB-', viewValue: 'AB-'},
+    {value: 'A+', viewValue: 'A+'},
+    {value: 'A-', viewValue: 'A-'},
+    {value: 'B+', viewValue: 'B+'},
+    {value: 'B-', viewValue: 'B-'},
+    {value: 'O+', viewValue: 'O+'},
+    {value: 'O-', viewValue: 'O-'},
   ];
   doctors: any = [];
 
