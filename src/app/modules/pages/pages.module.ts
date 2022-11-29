@@ -19,6 +19,7 @@ import { MatIconModule } from '@angular/material/icon';
 import { AuthComponent } from './auth/auth.component';
 import { MatTableModule } from '@angular/material/table';
 import { PatientInfoComponent } from './home/patient-info/patient-info.component';
+import { ScheduledAppointmentsComponent } from './home/scheduled-appointments/scheduled-appointments.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +28,8 @@ import { PatientInfoComponent } from './home/patient-info/patient-info.component
     LoginComponent,
     RegisterComponent,
     AuthComponent,
-    PatientInfoComponent
+    PatientInfoComponent,
+    ScheduledAppointmentsComponent
   ],
   imports: [
     CommonModule,

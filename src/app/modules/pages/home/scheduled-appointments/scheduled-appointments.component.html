@@ -1,0 +1,35 @@
+<div class="panel panel-primary" style="padding-top: 30px; padding-left: 20px;">
+    <div class="panel-heading">
+        <h1> Appointment List </h1>
+    </div>
+    <div class="panel-body">
+        <div class="table-responsive">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>Appointment ID</th>
+                        <th>Start time</th>
+                        <th>Doctor name and Surname</th>
+                        <th>Cancel Appointment</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let appointment of appointments">
+                        <td>
+                            {{appointment.id}}
+                        </td>
+                        <td>
+                            {{appointment.dateStart}}
+                        </td>
+                        <td>
+                            {{appointment.doctorName + " " + appointment.doctorSurname}}
+                        </td>
+                        <td>
+                            <Button>Cancel appointment</Button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
