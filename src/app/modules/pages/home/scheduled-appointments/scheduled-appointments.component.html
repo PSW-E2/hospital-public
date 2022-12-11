@@ -8,21 +8,21 @@
                 <thead>
                     <tr>
                         <th>Appointment ID</th>
-                        <th>Start time</th>
-                        <th>Doctor name and Surname</th>
+                        <th>Date</th>
+                        <th>Time</th>
                         <th>Cancel Appointment</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr *ngFor="let appointment of appointments">
                         <td>
-                            {{appointment.id}}
+                            {{appointment.appointmentId}}
                         </td>
                         <td>
-                            {{appointment.dateStart}}
+                            {{appointment.date}}
                         </td>
                         <td>
-                            {{appointment.doctorName + " " + appointment.doctorSurname}}
+                            {{appointment.time}}
                         </td>
                         <td>
                             <Button>Cancel appointment</Button>

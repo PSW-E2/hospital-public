@@ -1,6 +1,7 @@
 export class Appointment {
-    id: number = 0;
-    dateStart: string = '';
-    doctorName: string = '';
-    doctorSurname: string = '';
+    appointmentId: number = 0;
+    date: string = '';
+    time: string = '';
+    patientId: number = 0;
+    doctorId: number = 0;
 }
