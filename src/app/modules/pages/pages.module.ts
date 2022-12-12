@@ -20,6 +20,13 @@ import { AuthComponent } from './auth/auth.component';
 import { MatTableModule } from '@angular/material/table';
 import { PatientInfoComponent } from './home/patient-info/patient-info.component';
 import { ScheduledAppointmentsComponent } from './home/scheduled-appointments/scheduled-appointments.component';
+import { MatStepperModule } from '@angular/material/stepper';
+import { PatientScheduleAppointmentComponent } from './home/patient-schedule-appointment/patient-schedule-appointment.component';
+import { MatDatepickerModule } from '@angular/material/datepicker';
+import { MatNativeDateModule } from '@angular/material/core';
+import { MatSelectModule } from '@angular/material/select';
+
+
 
 @NgModule({
   declarations: [
@@ -29,7 +36,8 @@ import { ScheduledAppointmentsComponent } from './home/scheduled-appointments/sc
     RegisterComponent,
     AuthComponent,
     PatientInfoComponent,
-    ScheduledAppointmentsComponent
+    ScheduledAppointmentsComponent,
+    PatientScheduleAppointmentComponent
   ],
   imports: [
     CommonModule,
@@ -46,7 +54,11 @@ import { ScheduledAppointmentsComponent } from './home/scheduled-appointments/sc
     MatSnackBarModule,
     MaterialModule,
     BrowserModule,
-    MatTableModule
+    MatTableModule,
+    MatStepperModule,
+    MatDatepickerModule,
+    MatNativeDateModule,
+    MatSelectModule
   ]
 })
 export class PagesModule { }
