@@ -38,6 +38,7 @@ export class RecommendedAppointmentsComponent implements OnInit {
     this.flag = false;
     const dto: AppointmentDTO = this.findForm.getRawValue();
     if (!this.findForm.valid) return;
+    console.log(dto);
     this.appointmentService.getAppointments(dto).subscribe(res => {
       this.appointments = res;
       this.dataSource = new MatTableDataSource(this.appointments);
@@ -46,7 +47,7 @@ export class RecommendedAppointmentsComponent implements OnInit {
   schedule() : void{
     console.log(this.selectedRow);
     this.appointmentService.scheduleAppointment(this.selectedRow).subscribe(res => {
-      this.m_Router.navigate(['/home']);
+      this.m_Router.navigate(['/welcome']);
     });
   }
   @ViewChild(MatSort)
