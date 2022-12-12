@@ -10,6 +10,7 @@
                         <th>Appointment ID</th>
                         <th>Date</th>
                         <th>Time</th>
+                        <th>Doctor name and surname</th>
                         <th>Cancel Appointment</th>
                     </tr>
                 </thead>
@@ -23,6 +24,9 @@
                         </td>
                         <td>
                             {{appointment.time}}
+                        </td>
+                        <td>
+                            {{appointment.name + appointment.surname}}
                         </td>
                         <td>
                             <Button>Cancel appointment</Button>
