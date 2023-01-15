@@ -1,0 +1,16 @@
+.mat-stepper-horizontal {
+    margin-top: 8px;
+  }
+  
+  .mat-mdc-form-field {
+    margin-top: 16px;
+  }
+
+  h1 {
+    text-align: center;
+  }
+
+  .align-right {
+    text-align: right;
+    border: 0;
+  }
